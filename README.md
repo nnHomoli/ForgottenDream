@@ -12,7 +12,7 @@ Might not be compatible with some hardware
 
 Some of the code is outdated, awful, unoptimized, or overthought
 
-In the end, it was never really used much anywhere, and the idea is quite terrible in itself
+In the end, it was never really used much anywhere, and the idea is quite stupid in itself
 
 ## Credits
 
