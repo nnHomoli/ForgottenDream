@@ -6,7 +6,7 @@ Might not be compatible with some hardware
 
 Can be heavy on ram
 
-Some of the code is outdated, unoptimized, or overthought
+Some of the code is outdated, awful, unoptimized, or overthought
 
 Tiled was used for maps
 
