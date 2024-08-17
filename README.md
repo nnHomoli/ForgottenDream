@@ -1,7 +1,5 @@
 ### Probably not so really important note
 
-Development started in May 2023, was fully completed by February 2024, updated, and tested in July 2024
-
 This repository is not supported or being updated
 
 Might not be compatible with some hardware
@@ -13,6 +11,17 @@ Some of the code is outdated, unoptimized, or overthought
 Tiled was used for maps
 
 In the end, it was never really used much anywhere
+
+## Credits
+
+### Assets: 
+
+   -- https://sondanielson.itch.io/gameboy-simple-rpg-tileset ; https://sondanielson.itch.io/
+   
+   -- https://gumpyfunction.itch.io/game-boy-rpg-fantasy-tileset-free ; https://gumpyfunction.itch.io/
+
+   -- https://materialfuture.itch.io/gameboy-assets ; https://materialfuture.itch.io/
+   
 ___
 Original description starting here
 
