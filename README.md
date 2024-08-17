@@ -10,7 +10,7 @@ Some of the code is outdated, awful, unoptimized, or overthought
 
 Tiled was used for maps
 
-In the end, it was never really used much anywhere
+In the end, it was never really used much anywhere, and the idea is quite terrible in itself
 
 ## Credits
 
