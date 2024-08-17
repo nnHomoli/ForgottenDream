@@ -2,13 +2,15 @@
 
 This repository is not supported or being updated
 
-Might not be compatible with some hardware
+last time tested in july 2024
+
+Tiled was used for maps
 
 Can be heavy on ram
 
-Some of the code is outdated, awful, unoptimized, or overthought
+Might not be compatible with some hardware
 
-Tiled was used for maps
+Some of the code is outdated, awful, unoptimized, or overthought
 
 In the end, it was never really used much anywhere, and the idea is quite terrible in itself
 
