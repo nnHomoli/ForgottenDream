@@ -1,0 +1,1 @@
+inventory = {"English_Leaf": "<em>Leaf</em>\n\n     -Ordinary leaf, nothing very special about it", "Russian_Leaf": "<em>Листок</em>\n\n     -Обычный листок, ничего особенного"}

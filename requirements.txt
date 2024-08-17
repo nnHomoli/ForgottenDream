@@ -1,0 +1,8 @@
+pygame~=2.6.0
+pillow~=10.4.0
+telebot~=0.0.5
+numpy~=2.0.0
+bs4~=0.0.2
+beautifulsoup4~=4.12.3
+requests~=2.32.3
+lxml~=5.2.2
