@@ -52,6 +52,7 @@ class Fixers:
         self.kill = True
         for thread in self.at_work:
             thread.join()
+            self.at_work.remove(thread)
 
     def start(self):
         for func in self.functions:
