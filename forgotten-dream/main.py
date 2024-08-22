@@ -1,8 +1,8 @@
 import pygame
 import os
-import sys
 import queue
 import time
+import signal
 import threading
 import subprocess
 from level import Level
@@ -40,7 +40,9 @@ class GameServer:
         self.ServerLoop()
 
     def ServerLoop(self):
-        threading.Thread(target=self.Listening).start()
+        listener = threading.Thread(target=self.Listening)
+        listener.daemon = True
+        listener.start()
         repeat = True
 
         while True:
@@ -49,8 +51,18 @@ class GameServer:
                 repeat = False
 
             if pygame.event.get(pygame.QUIT):
+
+                if os.name == "nt":
+                    os.kill(self.bot.pid, signal.CTRL_C_EVENT)
+
+                else:
+                    self.bot.kill()
+
+                self.shm.close()
                 os.remove("./shm_cache.txt")
+                pygame.display.quit()
                 pygame.quit()
+                break
 
             if not self.tasks.empty():
                 task = self.tasks.get()
@@ -75,7 +87,7 @@ class GameServer:
 
         print(f"--//SERVER: Finished {uid} in {time.perf_counter() - time_start:0.4F} seconds")
 
-    @timeout(3)
+    @timeout(1)
     def render(self, uid):
         user = ReadAndWrite(uid)
         slot = user.read('current_slot')

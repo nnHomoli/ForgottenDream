@@ -281,6 +281,8 @@ class ReadAndWrite:
         final_pos_latest = final_pos
 
         check = threading.Thread(target=self.check_colliders, args=(pos_check, self.CollisionQueue, mapname, gameSlot,))
+
+        check.daemon = True
         check.start()
 
         if pos[0] != 0 and pos[1] != 0:
@@ -291,6 +293,9 @@ class ReadAndWrite:
                                       args=(str(pos_check1), self.AngelQueue1, mapname, gameSlot,))
             check2 = threading.Thread(target=self.check_colliders,
                                       args=(str(pos_check2), self.AngelQueue2, mapname, gameSlot,))
+
+            check1.daemon = True
+            check2.daemon = True
             check1.start()
             check2.start()
 
@@ -404,6 +409,8 @@ class ReadAndWrite:
         personal_check = threading.Thread(target=self.check_personal_colliders, args=(que, pos, slot,))
         entity_check = threading.Thread(target=self.check_entity_colliders, args=(que, pos, slot,))
 
+        personal_check.daemon = True
+        entity_check.daemon = True
         personal_check.start()
         entity_check.start()
 

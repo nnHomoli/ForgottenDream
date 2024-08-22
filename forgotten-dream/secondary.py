@@ -1,4 +1,5 @@
 import os
+
 import misc
 import queue
 import telebot
@@ -6,8 +7,9 @@ import callbacks
 import player_update
 import messageManagment
 import profileManagment
-from config import TOKEN, chat_path, user_data
+from fixer import Fixers
 from telebot import types
+from config import TOKEN, chat_path, user_data
 from userDataManagment import ReadAndWrite
 
 handler_queue = queue.Queue()
@@ -99,6 +101,8 @@ def callback_inline(call):
         else:
             callbacks.SYSTEM(call)
 
+Fixers().start()
 
-print("--//BOT: Bot started")
+print("--//BOT: successfully started")
 bot.infinity_polling()
+

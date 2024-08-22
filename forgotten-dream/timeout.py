@@ -7,6 +7,7 @@ def timeout(seconds, error_message='Timeout'):
         def wrapper(*args, **kwargs):
             result_queue = queue.Queue()
             thread = threading.Thread(target=_timeout_wrapper, args=(func, args, kwargs, result_queue))
+            thread.daemon = True
             thread.start()
             thread.join(seconds)
             if thread.is_alive():
