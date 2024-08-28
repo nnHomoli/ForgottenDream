@@ -2,10 +2,6 @@
 
 ### Probably not so really important note
 
-This repository is not supported or being updated
-
-Last time tested in August/24, can break later
-
 Tiled was used for maps
 
 Can be heavy on ram
