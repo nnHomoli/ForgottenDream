@@ -30,10 +30,3 @@ The idea is quite stupid in itself, so it doesn't really have any purpose
 
 -- https://materialfuture.itch.io/gameboy-assets ; https://materialfuture.itch.io/
 
----
-
-Original description starting here
-
-# Forgotten-dream
-
-This is the official repo for the ForgottenDream or some unknown RPG telegram bot
