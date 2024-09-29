@@ -2,7 +2,7 @@
 
 ### Probably not so really important note
 
-Tiled was used for maps
+[Tiled](https://www.mapeditor.org/) was used for maps
 
 Can be heavy on ram
 
