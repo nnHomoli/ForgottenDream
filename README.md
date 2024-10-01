@@ -4,6 +4,8 @@
 
 [Tiled](https://www.mapeditor.org/) was used for maps
 
+On map loading, it auto-generates collisions of specific layouts (by default "events" and "invisible"), so if you update the map or such, you might want to regenerate them by deleting an already existing one
+
 Can be heavy on ram
 
 Might not be compatible with some hardware
